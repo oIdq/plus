@@ -1,0 +1,21 @@
+{
+  "short_name": "Plus",
+  "name": "Plus",
+  "icons": [
+    {
+      "src": "./icon-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "./icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#fff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ffffff"
+}

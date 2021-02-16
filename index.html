@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Plus</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="apple-touch-icon" href="assets/icon.png">
+    <link rel="icon" type="image/png" href="icon-256x256.png"/>
+    <meta name="theme-color" content="#FFFFFF"/>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="title"><a href="#">Plus</a></div>
+        <div class="menu-icon"><a href="#"><img alt="menu" src="assets/hamburger.svg"></a></div>
+    </div>
+</header>
+<div class="menu">
+    <!--
+        do dalšího divu budou pomocí JS vloženy jednotlivé položky menu:
+        <a href="[ID čítače]" id="menu-item-[pořadí čítače]" class="item">[jméno čítače]</a>
+     -->
+    <div class="wrapper hidden" id="menu-wrapper">
+    </div>
+</div>
+<section class="content">
+    <h1 class="counter">
+        <a href="#" id="edit">✎</a>
+        <span id="name">-</span> <!-- zde bude vloženo jméno aktuálního čítače -->
+        <a href="#" id="delete">🗑 </a>
+    </h1>
+    <button class="main-button" id="add"><img src="assets/plus.svg" alt="plus"></button>
+    <div id="total">-</div> <!-- zde bude vložena hodnota aktuálního čítače -->
+    <button class="main-button" id="minus"><img src="assets/minus.svg" alt="minus"></button>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script src="js/core.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

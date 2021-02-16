@@ -1,0 +1,146 @@
+/* Basic setup */
+html, body, #content {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    padding-top: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 40em;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    font-size: 25px;
+    font-weight: 600;
+}
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+header .wrapper img {
+    height: 1em;
+    width: auto;
+    display: inline-block;
+}
+
+.menu {
+    position: relative;
+    height: 0;
+    width: 100%;
+    text-align: center;
+}
+.menu .wrapper {
+    visibility: visible;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 2em;
+    background-color: white;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.1s linear;
+}
+.menu .wrapper.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.menu a {
+    width: 100%;
+    font-size: 25px;
+    padding: 0.5em;
+    font-weight: 700;
+    display: inline-block;
+    border-bottom: black 2px solid;
+}
+.menu a:first-of-type {
+    border-top: black 2px solid;
+    margin-top: 0.7em;
+}
+
+/* Content */
+#content {
+    margin: auto;
+    max-width: 500px;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.counter {
+    font-weight: bold;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#total {
+    text-align: center;
+    font-size: 40pt;
+}
+
+.main-button {
+    display: block;
+    margin: 1em auto;
+    max-height: 500px;
+    border-radius: 10000em;
+    border-style: solid;
+    border-color: black;
+    align-self: flex-end;
+}
+
+.main-button img {
+    display: inline-block;
+    width: 90%;
+    height: auto;
+}
+
+#add {
+    width: 15em;
+    height: 15em;
+}
+
+#minus {
+    width: 10em;
+    height: 10em;
+}
+
+#edit {
+    margin-right: 1em;
+}
+#delete {
+    margin-left: 1em;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1000px) {
+    body {
+        padding-top: 2em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        padding-top: 1.5em;
+    }
+    #add {
+        width: 10em;
+        height: 10em;
+    }
+    #minus {
+        width: 5em;
+        height: 5em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        padding-top: 1em;
+    }
+}
